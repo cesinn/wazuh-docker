@@ -1,0 +1,12 @@
+*.log
+*.pid
+*.sock
+*.db
+*.pem
+*.key
+*.crt
+*.env
+data/
+tmp/
+volumes/
+volumes-backup/
