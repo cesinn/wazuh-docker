@@ -52,6 +52,24 @@ docker compose up -d
 - `.gitignore` – Evita versionar arquivos sensíveis e os backups
 - `README.md` – Instruções de uso
 
+### 🔍 Funcionalidades Adicionais
+
+
+#### ✅ Regra de Auditoria USB via Event ID 2100
+
+Detecta a conexão de dispositivos USB em máquinas Windows monitoradas pelo Wazuh, utilizando o Event ID 2100 do canal:
+
+
+- **Rule ID:** `100210`
+- **Evento monitorado:** `EVENTID: 2100`
+- **Grupo:** `usb_device,windows`
+- **Arquivo:** `/var/ossec/etc/rules/local_rules.xml`
+- **Status:** ✔️ Validado com `wazuh-logtest`
+- **Branch Git:** `feat/regra-usb-eventid2100`
+- **Backup:** Gerado com `./backup_volumes.sh`
+- **Pull Request:** https://github.com/cesinn/wazuh-docker/pull/new/feat/regra-usb-eventid2100
+
+
 ---
 
 ## 🧠 Autor
